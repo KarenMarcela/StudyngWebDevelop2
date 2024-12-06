@@ -1,0 +1,27 @@
+---
+import Header from "../../components/head/Header.astro"
+import Menuleft from "../../components/body/Menuleft.astro"
+import Body1 from "../../components/body/Body1.astro"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications</title>
+</head>
+<body class="bg-blue-300/20">
+    <header class="w-[100%]">
+        <Header/>
+    </header>
+    <nav class="font-sans flex space-x-5 items-center">
+        <div class="pl-[5%] w-[40%]">
+            <Menuleft/>
+        </div>
+        <div class="w-[100%] h-[400px] flex items-center justify-center">
+            <Body1/>
+        </div>
+    </nav>
+</body>
+</html>

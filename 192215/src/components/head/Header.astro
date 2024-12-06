@@ -1,0 +1,30 @@
+---
+import {Icon} from "astro-icon/components" 
+---
+
+<header class="text-white bg-gray-800 w-[100%] flex h-[60px] justify-around items-center">
+    <div>
+        <h1 class="font-bold font-mono text-[30px]">KINSTA</h1>
+    </div>
+    <div class="flex bg-gray-600 space-x-1 w-[10%] rounded-md h-8 items-center">
+        <Icon name="lucide:building" width="24" height="24" />
+        <button >BUILDINGS</button>
+        <Icon class="mt-1" name="oui:arrow-down" width="16" height="16" />   
+    </div>
+    <div class="flex justify-between w-[20%]">
+        <div>
+            <Icon name="iconamoon:notification-bold" width="24" height="24" />
+        </div>
+        <div class="flex">
+            <Icon name="mdi:file-document-outline" width="24" height="24" />
+            <h3>Docs</h3>
+        </div>
+        <button class="flex space-x-1 h-8 items-center">
+            <div class="bg-purple-800 rounded-md">
+                <Icon name="mdi:temperature-kelvin" width="24" height="24" />
+            </div>
+            <h3>Kista user</h3>
+            <Icon class="mt-1" name="oui:arrow-down" width="16" height="16" />   
+        </button>
+    </div>
+</header>

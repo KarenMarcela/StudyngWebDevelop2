@@ -1,0 +1,30 @@
+---
+import Menuleft from "../components/body/Menuleft.astro"
+import Header from "../components/head/Header.astro"
+import Body1 from "../components/body/Body1.astro"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body class="bg-blue-300/20">
+		<slot />
+		<header class="w-[100%]">
+			<Header/>
+		</header>
+		<nav class="font-sans flex space-x-5">
+			<div class="pl-[5%] w-[40%] flex items-center">
+				<Menuleft/>
+			</div>
+			<div class="w-[100%] h-[400px] flex items-center justify-center">
+				<Body1/>
+			</div>
+		</nav>
+	</body>
+</html>

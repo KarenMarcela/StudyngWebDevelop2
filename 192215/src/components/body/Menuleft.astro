@@ -1,0 +1,22 @@
+---
+import {Icon} from 'astro-icon/components';
+---
+
+<nav class="text-gray-500 font-semibold flex flex-col justify-start space-y-2 w-[100%]">
+    <div class="flex space-x-1 h-7 hover:bg-gray-500/10 w-[50%] rounded-lg">
+        <Icon name="mdi:view-dashboard-outline" width="24" height="24" />
+        <a href="#">Dashboard</a>
+    </div>
+    <div class="flex space-x-1 h-7 hover:bg-gray-500/10 w-[50%] rounded-lg">
+        <Icon name="material-symbols-light:settings-applications-outline-rounded" width="24" height="24" />
+        <a href="/applications">Applications</a>
+    </div>
+    <div class="flex space-x-1 h-7 hover:bg-gray-500/10 w-[50%] rounded-lg">
+        <Icon name="mdi:file-word-box-outline" width="24" height="24" />
+        <a href="#">WordPress Sites</a>
+    </div>
+    <div class="flex space-x-1 h-7 hover:bg-gray-500/10 w-[50%] rounded-lg">
+        <Icon name="mdi:dns-outline" width="24" height="24" />
+        <a href="#">DNS</a>
+    </div>
+</nav>
